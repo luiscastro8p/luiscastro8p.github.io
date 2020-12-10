@@ -1,0 +1,160 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div class="spacer"></div>
+
+</div>
+
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+
+    <h2>{{ title }} </h2>
+
+  </div>
+
+  <!-- Next Steps -->
+  <h2>Homework #1</h2>
+  <p>Select a options wanted!</p>
+
+  <input type="hidden" #selection>
+
+  <div class="card-container">
+    <div class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+
+      <span>My selft</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>My Friends</span>
+    </div>
+
+    <div class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Age, Male , Female, Meet, Speell</span>
+    </div>
+    <div class="card card-small" (click)="selection.value = 'video'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>Video</span>
+    </div>
+    <div class="card card-small" (click)="selection.value = 'tedx'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>TEDx</span>
+    </div>
+
+
+
+  </div>
+
+  <!-- Terminal -->
+  <div class="terminal" [ngSwitch]="selection.value">
+    <div *ngSwitchCase="'component'">
+      i'm luis castro, I'm 21 years old,<br> i'm from los mochis sinaloa and i'm a good man xd
+    </div>
+    <div *ngSwitchCase="'material'">
+      <div>
+        I have many friends but alone i have a group of university that i appreciate a lot,
+        2 peoples theys here
+        Jesus Garcia and Lizeth Ruiz
+        they has 21 years
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'pwa'">
+      <div>
+        <div>
+          <p><b>Age:</b>
+            My dog ​​will have 8 of age
+          </p> <br>
+          <img src="../assets/yiyi.jpg" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>Male:</b>
+            i will have a new member male in the family, next year!!
+          </p> <br>
+          <img src="../assets/sobrino.jpeg" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>Female:</b>
+            i like, females, between the ages of 19 and 23. hahaha xd
+          </p> <br>
+          <img src="../assets/x.png" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>Meet:</b>
+            i have all days a meet of hackademy
+          </p> <br>
+          <img src="https://hackademy.mx/assets/images/logo.svg" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>spell:</b>
+            yesterday i spell my name, i had never done it
+          </p> <br>
+          <img src="../assets/dele.jpg" alt="yiyi" width="100">
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'video'">
+      <div>
+        <video src="../assets/video.mkv" width="500" controls></video>
+      </div>
+    </div>
+    <div *ngSwitchCase="'tedx'">
+      :c
+    </div>
+
+  </div>
+  <h2>Homework #2</h2>
+  <p>Select a options wanted!</p>
+
+  <input type="hidden" #homework2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="homework2.value = 'biography'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>biography</span>
+    </div>
+
+
+
+  </div>
+  <div class="terminal" [ngSwitch]="homework2.value">
+    <div *ngSwitchCase="'biography'">
+      <div>
+        my mother it's my favorite person, why... she's very hard-working,
+        she makes dresses for weddi and 15 years,
+        she's love her job,
+        has worked more of 10 years, is good person, honest, simpatic and has a good memes
+      </div>
+    </div>
+  </div>
+
+  <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677"
+    viewBox="0 0 2611.084 485.677">
+    <path id="Path_39" data-name="Path 39"
+      d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z"
+      transform="translate(142.69 -634.312)" fill="#eee" />
+  </svg>
+
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<router-outlet></router-outlet>
